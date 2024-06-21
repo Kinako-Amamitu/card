@@ -31,6 +31,27 @@ namespace Card
 
             Console.WriteLine("{0},{1},{2},{3}",number1,number2,number3,number4);
 
+            if(number1 == number2 && number1==number3 && number1==number4)
+            {
+                Console.WriteLine("フォーカード!!!!");
+            }
+            else if((number1==number2&&number1==number3)||(number1==number2&&number1==number4)||(number1==number3&&number1==number4)||(number2==number3&&number3==number4))
+            {
+                Console.WriteLine("スリーカード!!!");
+            }
+            else if((number1==number2&& number3 == number4)||(number2==number3&&number1==number4)||(number1==number3&&number2==number4))
+            {
+                Console.WriteLine("ツーペア!!");
+            }
+            else if((number1 == number2) ||( number2 == number3) || (number3 == number4) || (number1 == number3) ||number1==number4||(number2 == number4))
+            {
+                Console.WriteLine("ワンペア!");
+            }
+            else 
+            {
+                Console.WriteLine("ノーペア...");
+            }
+
             Console.ReadLine();
         }
     }
