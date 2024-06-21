@@ -17,11 +17,11 @@ namespace Card
                 int number1 = 0, number2 = 0, number3 = 0, number4 = 0;
 
 
-                while (number1 <= 0 || number1 > 4)
+                while (number1 <= 0 || number1 > 13)
                 {
                     Console.Write("１つ目のカードの数字を入力してください");
                     number1 = int.Parse(Console.ReadLine());
-                    if (number1 <= 0 || number1 > 4)
+                    if (number1 <= 0 || number1 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
                     }
@@ -29,31 +29,31 @@ namespace Card
 
 
 
-                while (number2 <= 0 || number2 > 4)
+                while (number2 <= 0 || number2 > 13)
                 {
                     Console.Write("２つ目のカードの数字を入力してください");
                     number2 = int.Parse(Console.ReadLine());
-                    if (number2 <= 0 || number2 > 4)
+                    if (number2 <= 0 || number2 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
                     }
                 }
 
-                while (number3 <= 0 || number3 > 4)
+                while (number3 <= 0 || number3 > 13)
                 {
                     Console.Write("３つ目のカードの数字を入力してください");
                     number3 = int.Parse(Console.ReadLine());
-                    if (number3 <= 0 || number3 > 4)
+                    if (number3 <= 0 || number3 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
                     }
                 }
 
-                while (number4 <= 0 || number4 > 4)
+                while (number4 <= 0 || number4 > 13)
                 {
                     Console.Write("４つ目のカードの数字を入力してください");
                     number4 = int.Parse(Console.ReadLine());
-                    if (number4 <= 0 || number4 > 4)
+                    if (number4 <= 0 || number4 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
                     }
