@@ -14,13 +14,17 @@ namespace Card
         {
             int mode = 1;
             while (mode==1) {
-                int number1 = 0, number2 = 0, number3 = 0, number4 = 0;
+                Random rnd = new Random();
+                int number1=rnd.Next(1,13),
+                    number2=rnd.Next(1,13),
+                    number3=rnd.Next(1,13),
+                    number4=rnd.Next(1,13);
 
 
                 while (number1 <= 0 || number1 > 13)
                 {
-                    Console.Write("１つ目のカードの数字を入力してください");
-                    number1 = int.Parse(Console.ReadLine());
+                    Console.Write("１つ目のカードの数字{0}",number1);
+        
                     if (number1 <= 0 || number1 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
@@ -31,8 +35,8 @@ namespace Card
 
                 while (number2 <= 0 || number2 > 13)
                 {
-                    Console.Write("２つ目のカードの数字を入力してください");
-                    number2 = int.Parse(Console.ReadLine());
+                    Console.Write("２つ目のカードの数字{0}",number2);
+                   
                     if (number2 <= 0 || number2 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
@@ -41,8 +45,8 @@ namespace Card
 
                 while (number3 <= 0 || number3 > 13)
                 {
-                    Console.Write("３つ目のカードの数字を入力してください");
-                    number3 = int.Parse(Console.ReadLine());
+                    Console.Write("３つ目のカードの数字{0}",number3);
+                 
                     if (number3 <= 0 || number3 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
@@ -51,8 +55,8 @@ namespace Card
 
                 while (number4 <= 0 || number4 > 13)
                 {
-                    Console.Write("４つ目のカードの数字を入力してください");
-                    number4 = int.Parse(Console.ReadLine());
+                    Console.Write("４つ目のカードの数字{0}",number4);
+                    
                     if (number4 <= 0 || number4 > 13)
                     {
                         Console.WriteLine("もう一度入力してください。");
